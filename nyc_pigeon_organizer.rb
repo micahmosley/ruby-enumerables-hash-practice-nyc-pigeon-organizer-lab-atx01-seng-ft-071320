@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   names=[]
   names=data[:color].map do |color, pigeon|
     pigeon
-  end 
+  end  
   names=names.flatten
   names=names.uniq!
   new_data={}
@@ -25,7 +25,9 @@ def nyc_pigeon_organizer(data)
   
   
   data[:gender].each do |gend, pigeon|
-    new_data[pigeon][:gender].push(gend.to_s)
+    pigeon.each do |pig|
+      new_data[pig][:gender].push(gend.to_s)
+    end
   end
   
   data[:lives].each do |liv, pigeon|
