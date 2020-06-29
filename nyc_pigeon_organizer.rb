@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
   end  
   binding.pry
   names=names.flatten
-  names=names.uniq!
+  names=names.uniq
   new_data={}
   i=0 
   while i<names.length do 
