@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   
   data[:color].each do |col, pigeon|
     binding.pry
-    puts pigeon 
+    puts pigeon[0] 
   end
   
   
