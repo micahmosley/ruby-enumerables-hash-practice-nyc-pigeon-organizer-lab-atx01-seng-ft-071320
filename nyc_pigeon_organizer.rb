@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
     i+=1 
   end 
   
-  data[:color].each do |col, pigeon|
+  data[:color].map do |col, pigeon|
     new_data[pigeon][:color]=col
   end
   binding.pry
