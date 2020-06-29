@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   names=data[:color].map do |color, pigeon|
     pigeon
   end  
+  binding.pry
   names=names.flatten
   names=names.uniq!
   new_data={}
