@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
   end 
   
   data[:color].each do |col, pigeon|
-    new_data[pigeon][:color].push(col.to_s)
+    new_data[pigeon][:color]=col
   end
   
   data[:gender].each do |gend, pigeon|
@@ -30,7 +30,7 @@ def nyc_pigeon_organizer(data)
     new_data[pigeon][:lives].push(liv.to_s)
   end
   
-  binding.pry
+ 
   new_data
   
   
