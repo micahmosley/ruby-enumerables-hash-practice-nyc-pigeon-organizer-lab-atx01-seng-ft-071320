@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
   data[:color].each do |col, pigeon|
     new_data[pigeon][:color].push(col.to_s)
   end
-  binding.pry
+  
   
   data[:gender].each do |gend, pigeon|
     new_data[pigeon][:gender].push(gend.to_s)
