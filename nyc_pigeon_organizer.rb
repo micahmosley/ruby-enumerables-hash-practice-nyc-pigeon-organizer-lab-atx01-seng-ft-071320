@@ -29,6 +29,7 @@ def nyc_pigeon_organizer(data)
   data[:lives].each do |liv, pigeon|
     new_data[pigeon][:lives].push(liv.to_s)
   end
+  
   binding.pry
   new_data
   
