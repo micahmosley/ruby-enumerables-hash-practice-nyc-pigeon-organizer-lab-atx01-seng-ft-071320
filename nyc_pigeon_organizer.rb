@@ -20,10 +20,9 @@ def nyc_pigeon_organizer(data)
   
   data[:color].each do |col, pigeon|
     puts pigeon
-    new_data[pigeon][:color].push(col.to_s)
   end
   
-  
+  new_data[pigeon][:color].push(col.to_s)
   data[:gender].each do |gend, pigeon|
     new_data[pigeon][:gender].push(gend.to_s)
   end
